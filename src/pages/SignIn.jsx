@@ -11,6 +11,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import useStyles from '../config/theme.sign-in';
 
+import PasswordForget from '../components/PasswordForget';
 import { withFirebase } from '../components/Firebase';
 import { Link, withRouter } from 'react-router-dom';
 
@@ -111,17 +112,12 @@ function SignIn(props) {
 						</Button>
 						<Grid container>
 							<Grid item xs>
-								<Link href='#' variant='body2'>
-									Forgot password?
-								</Link>
+								<PasswordForget />
 							</Grid>
 							<Grid item>
 								<Link to='/sign-up'>{"Don't have an account? Sign Up"}</Link>
 							</Grid>
 						</Grid>
-						{/* <Box mt={5}>
-							<Copyright />
-						</Box> */}
 					</form>
 				</div>
 			</Grid>
