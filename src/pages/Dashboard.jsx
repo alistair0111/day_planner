@@ -3,8 +3,6 @@ import React from 'react';
 // import { withFirebase } from '../components/Firebase';
 import { withRouter } from 'react-router-dom';
 
-import { Switch, Route, useRouteMatch, Redirect } from 'react-router-dom';
-
 import clsx from 'clsx';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
@@ -14,18 +12,15 @@ import IconButton from '@material-ui/core/IconButton';
 import Badge from '@material-ui/core/Badge';
 import Container from '@material-ui/core/Container';
 import MenuIcon from '@material-ui/icons/Menu';
-import NotificationsIcon from '@material-ui/icons/Notifications';
+// import NotificationsIcon from '@material-ui/icons/Notifications';
 
 import useStyles from '../config/theme.dashboard';
 import Sidebar from '../components/Sidebar';
 import { AuthUserContext, withAuthentication } from '../components/Session';
-import { textAlign } from '@material-ui/system';
 
 import Calendar from '../components/Calendar';
 
 function Dashboard(props) {
-	let match = useRouteMatch();
-
 	const classes = useStyles();
 
 	const [open, setOpen] = React.useState(true);
@@ -77,9 +72,8 @@ function Dashboard(props) {
 								<IconButton color='inherit'>
 									<Badge badgeContent={4} color='secondary'>
 										<Typography component='p' style={{ paddingRight: '15px' }}>
-											username
+											{authUser.email}
 										</Typography>
-										<NotificationsIcon />
 									</Badge>
 								</IconButton>
 							</Toolbar>

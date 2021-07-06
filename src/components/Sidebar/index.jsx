@@ -7,7 +7,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import EventNoteIcon from '@material-ui/icons/EventNote';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import SettingsIcon from '@material-ui/icons/Settings';
 
 import clsx from 'clsx';
 import Drawer from '@material-ui/core/Drawer';
@@ -54,14 +53,6 @@ function Sidebar(props) {
 			<List>
 				<div>
 					<ListSubheader inset>Account</ListSubheader>
-					<Link to={`${match.url}/admin`}>
-						<ListItem button>
-							<ListItemIcon>
-								<SettingsIcon />
-							</ListItemIcon>
-							<ListItemText primary='Admin' />
-						</ListItem>
-					</Link>
 					<ListItem button onClick={() => props.signOut()}>
 						<ListItemIcon>
 							<ExitToAppIcon />
