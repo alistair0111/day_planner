@@ -70,11 +70,11 @@ function Dashboard(props) {
 									Dashboard
 								</Typography>
 								<IconButton color='inherit'>
-									<Badge badgeContent={4} color='secondary'>
-										<Typography component='p' style={{ paddingRight: '15px' }}>
-											{authUser.email}
-										</Typography>
-									</Badge>
+									{/* <Badge badgeContent={4} color='secondary'> */}
+									<Typography component='p' style={{ paddingRight: '15px' }}>
+										{authUser.email}
+									</Typography>
+									{/* </Badge> */}
 								</IconButton>
 							</Toolbar>
 						</AppBar>
