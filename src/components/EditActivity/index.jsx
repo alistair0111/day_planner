@@ -115,7 +115,7 @@ function EditActivity(props) {
 					step={10}
 					marks
 					min={10}
-					max={120}
+					max={240}
 					name='duration'
 					onChange={handleSlider}
 					style={{ marginBottom: '20px' }}
