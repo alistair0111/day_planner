@@ -59,8 +59,7 @@ function PasswordForget(props) {
 				<DialogTitle id='form-dialog-title'>Reset my password</DialogTitle>
 				<DialogContent>
 					<DialogContentText>
-						To reset your password, please enter your email address here. We
-						will you instructions on how to reset your password shortly after.
+						To reset your password, please enter your email address here.
 					</DialogContentText>
 					<TextField
 						autoFocus
